@@ -6,11 +6,39 @@
 
     <script type="text/javascript" src="js/jquery-3.2.0.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <title></title>
+    <title>Find your celebrity match!</title>
   </head>
   <body>
     <div class="container">
+      <form id="love-form"class="form-group">
+        <label for="age">How old are you?</label>
+        <input id="age"class="form-control" name="name">
 
+        <h5>Select your gender preference</h5>
+        <select id="gender">
+         <option value="female">Female</option>
+         <option value="male">Male</option>
+       </select>
+
+       <div class="radio">
+
+         <h5>Have you been hospitalized in the last 6 months?</h5>
+         <label>
+           <input type="radio" name="hospital" value="true">
+           Yes
+         </label>
+         <label>
+           <input type="radio" name="hospital" value="false">
+           No
+          </label>
+       </div>
+
+        <button class="btn" type="submit" name="button">Find your match!</button>
+      </form>
+
+      <div class="output">
+
+      </div>
     </div>
   </body>
 </html>
